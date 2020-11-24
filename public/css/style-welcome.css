@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    height: 10vh;
+    background: transparent linear-gradient(180deg, #85C6FF 0%, #3C2DAC 100%) 0% 0% no-repeat padding-box;
+}
+
+.logIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 100%;
+}
+
+.createAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 100%;
+}
+.logo{
+    width: 60%;
+    height: 100%;
+}
+
+i {
+    font-size: 1.5em;
+    width: 1.5em;
+}
+.logIn> button{
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+    height: 80%;
+}
+
+.createAccount >button{
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+    height: 80%;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 30px;
+    opacity: 1;
+    padding: 1em;
+
+    text-align: left;
+    font: normal normal normal 15px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.logo > img {
+    padding: 0;
+    height: 100%;
+    width: 20%;
+}
