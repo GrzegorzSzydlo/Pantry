@@ -48,13 +48,11 @@ header {
     border-bottom: 1px solid gray;
 }
 
-section {
+section{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    padding: 2em;
-    overflow: auto;
+    grid-template-columns: repeat(2, 1fr);
 }
+
 
 nav>img {
     width: 60%;
@@ -126,49 +124,37 @@ li:last-child {
     align-items: center;
 }
 
-.profile>i {
-    padding: 1em 1em;
-}
+.contact{
 
-.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+.name{
+    margin-top: 3em;
     width: 70%;
+    height: 5vh;
+    border-radius: 30px;
 }
-
-.search-bar>form>input {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border: 1px solid #707070;
-    border-radius: 23px;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 0.72px;
-    color: #A8A8A8;
-    margin: 0;
-    box-sizing: border-box;
+.email{
+    margin-top: 3em;
+    width: 70%;
+    height: 5vh;
+    border-radius: 30px;
 }
-
-
-.projects>div>img {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
+.subject{
+    margin-top: 3em;
+    width: 70%;
+    height: 5vh;
+    border-radius: 30px;
 }
-
-.projects>div>div {
-    height: 50%;
-    margin: 1em;
-    color: #2699FB;
+.message{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+    margin-top: 3em;
+    width: 70%;
+    height: 40vh;
+    border-radius: 30px;
 
-.projects>div {
-    border: 1px solid gray;
-    border-radius: 1em 1em 0 0;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }

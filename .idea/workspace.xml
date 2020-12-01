@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3171c99c-ad2e-491b-8b59-4134bb690f69" name="Default Changelist" comment="" />
+    <list default="true" id="3171c99c-ad2e-491b-8b59-4134bb690f69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style-main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefaultController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +19,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jrq2ecuVjyLjutxoqbAWLfzv1i" />
   <component name="ProjectViewState">
@@ -34,12 +43,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\studia\Semestr 5\WDPAI\Projekt\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studia\Semestr 5\WDPAI\Projekt\public\img" />
       <recent name="D:\studia\Semestr 5\WDPAI\Projekt" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\studia\Semestr 5\WDPAI\Projekt\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +68,10 @@
       <workItem from="1605780087668" duration="617000" />
       <workItem from="1606135536413" duration="18826000" />
       <workItem from="1606226175439" duration="6047000" />
-      <workItem from="1606242691304" duration="3739000" />
+      <workItem from="1606242691304" duration="4847000" />
+      <workItem from="1606503455405" duration="243000" />
+      <workItem from="1606836161763" duration="8979000" />
+      <workItem from="1606851682277" duration="6289000" />
     </task>
     <servers />
   </component>
@@ -67,6 +79,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="570" y="207" key="#Web_Browsers" timestamp="1606841450269">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="570" y="207" key="#Web_Browsers/0.0.1536.834@0.0.1536.834" timestamp="1606841450269" />
     <state x="1274" y="448" key="NewPhpFileDialog" timestamp="1604573471262">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
