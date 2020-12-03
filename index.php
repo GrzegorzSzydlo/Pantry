@@ -10,5 +10,6 @@ Router::get('main', 'DefaultController');
 Router::get('registration', 'DefaultController');
 Router::get('welcome', 'DefaultController');
 Router::get('contact', 'DefaultController');
+Router::post('login', 'SecurityController');
 
 Router::run($path);

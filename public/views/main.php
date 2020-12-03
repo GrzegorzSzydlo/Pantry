@@ -28,7 +28,7 @@
         </header>
         <section class="projects">
             <div id="project-1">
-                <img src="public/img/uploads/project_smile.jpg">
+                <img src="public/uploads/project_smile.jpg">
                 <div>
                     <h2>title</h2>
                     <p>description</p>
