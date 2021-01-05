@@ -11,11 +11,11 @@
         <ul>
             <li>
                 <i class="fas fa-home"></i>
-                <a href="#" class="button">Home</a>
+                <a href="main" class="button">Home</a>
             </li>
             <li>
                 <i class="far fa-address-book"></i>
-                <a href="#" class="button">Contacts</a>
+                <a href="contact" class="button">Contacts</a>
             </li>
         </ul>
     </nav>
