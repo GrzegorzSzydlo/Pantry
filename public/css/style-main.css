@@ -108,7 +108,7 @@ li:last-child {
 
 
 
-.profile {
+.log-out {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 3px 6px #00000029;
@@ -124,7 +124,7 @@ li:last-child {
     align-items: center;
 }
 
-.profile>i {
+.log-out>i {
     padding: 1em 1em;
 }
 

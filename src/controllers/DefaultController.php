@@ -25,4 +25,8 @@ class DefaultController extends AppController {
     {
         $this->render('contact');
     }
+    public function logout()
+    {
+        $this->render('logout');
+    }
 }

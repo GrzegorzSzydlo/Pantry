@@ -21,9 +21,9 @@
     </nav>
     <main>
         <header>
-            <div class="profile">
-                <i class="fas fa-user"></i>
-                Profile
+            <div class="log-out" onclick="location.href='logout'">
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
             </div>
         </header>
         <section class="section">
