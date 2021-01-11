@@ -77,3 +77,28 @@ button{
     height: 100%;
     width: 20%;
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+.div-opis{
+    text-align: center;
+    padding-left: 3em;
+}
+.div-opis> p{
+    font-size: 1.5em;
+}
+
+p#witaj{
+    padding-top: 5em;
+
+    text-align: center;
+    font-size: 2em;
+}
+p#zapraszam{
+    padding-top: 1em;
+
+    text-align: center;
+    font-size: 2em;
+}

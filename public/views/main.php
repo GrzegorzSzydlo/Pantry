@@ -26,18 +26,53 @@
                 Profile
             </div>
         </header>
-        <section class="projects">
-            <div id="project-1">
-                <img src="public/uploads/project_smile.jpg">
-                <div>
-                    <h2>title</h2>
-                    <p>description</p>
-                    <div class="social-section">
-                        <i class="fas fa-heart"> 600</i>
-                        <i class="fas fa-minus-square"> 121</i>
-                    </div>
+        <section class="section">
+            <div class="add-items">
+                <div class="add-item">
+                    <form method="post" ENCTYPE="multipart/form-data">
+                        <div class="message">
+                            <?php
+                            if(isset($messages)){
+                                foreach($messages as $message) {
+                                    echo $message;
+                                }
+                            }
+                            ?>
+                        </div>
+                        <input name="name-products" type="text" placeholder="name product">
+                        <input name="icon" type="file"><br/>
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+
+                <div class="items">
+
                 </div>
             </div>
+            <div class="list-items">
+
+            </div>
+
+
+
+
+
+
+
+
+
+<!--            <div id="project-1">-->
+<!--                <img src="public/uploads/project_smile.jpg">-->
+<!--                <div>-->
+<!--                    <h2>title</h2>-->
+<!--                    <p>description</p>-->
+<!--                    <div class="social-section">-->
+<!--                        <i class="fas fa-heart"> 600</i>-->
+<!--                        <i class="fas fa-minus-square"> 121</i>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </section>
     </main>
 </div>

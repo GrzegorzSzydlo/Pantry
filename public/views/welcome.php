@@ -14,19 +14,30 @@
             </div>
 
             <div class="logIn">
-                <button>
+                <button onclick="location.href='login'">
                     <i class="fas fa-sign-in-alt"></i>
                         Log in
                 </button>
             </div>
             <div class="createAccount">
-                <button>
+                <button onclick="location.href='registration'">
                     Create account
                 </button>
             </div>
         </header>
         <section class="main">
-
+            <div class="div-opis">
+                <p id="witaj">
+                    Witaj <i class="far fa-laugh-wink"></i>
+                </p>
+                <p id="opis">
+                    Znajdziesz tutaj przepisy na różne potrawy oraz będziesz mógł zrobić listę rzeczy,</p>
+                <p>które posiadasz w swoim domu.</p>
+                <p id="zapraszam">Zapraszam</p>
+            </div>
+            <div>
+                2
+            </div>
         </section>
     </main>
 </body>
