@@ -2,13 +2,13 @@
 
 class Items{
     private $nameProduct;
-    private $image;
+    private $amount;
 
 
-    public function __construct($nameProduct, $image)
+    public function __construct($nameProduct, $amount)
     {
         $this->nameProduct = $nameProduct;
-        $this->image = $image;
+        $this->amount = $amount;
     }
 
     public function getNameProduct()
@@ -21,14 +21,14 @@ class Items{
         $this->nameProduct = $nameProduct;
     }
 
-    public function getImage()
+    public function getAmount()
     {
-        return $this->image;
+        return $this->amount;
     }
 
-    public function setImage($image): void
+    public function setAmount($amount): void
     {
-        $this->image = $image;
+        $this->amount = $amount;
     }
 
 }

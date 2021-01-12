@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style-main.css">
@@ -21,6 +25,9 @@
     </nav>
     <main>
         <header>
+            <div class="name">
+                <? echo $_SESSION['user'];?>
+            </div>
             <div class="log-out" onclick="location.href='logout'">
                 <i class="fas fa-sign-out-alt"></i>
                 Log out
@@ -29,7 +36,7 @@
         <section class="section">
             <div class="add-items">
                 <div class="add-item">
-                    <form method="post" ENCTYPE="multipart/form-data">
+                    <form action="addItem" method="post" ENCTYPE="multipart/form-data">
                         <div class="message">
                             <?php
                             if(isset($messages)){
@@ -38,10 +45,12 @@
                                 }
                             }
                             ?>
+
+
                         </div>
-                        <input name="name-products" type="text" placeholder="name product">
-                        <input name="icon" type="file"><br/>
-                        <button type="submit">Submit</button>
+                        <input name="nameProduct" type="text" placeholder="name product">
+                        <input name="amount" type="number"><br/>
+                        <button type="submit">Add item</button>
 
                     </form>
                 </div>
@@ -50,7 +59,7 @@
 
                 </div>
             </div>
-            <div class="list-items">
+            <div class="1">
 
             </div>
 

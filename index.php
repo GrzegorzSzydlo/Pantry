@@ -13,5 +13,8 @@ Router::get('contact', 'DefaultController');
 Router::post('login', 'SecurityController');
 Router::post('registration', 'SecurityController');
 
+Router::get('items', 'ItemController');
+Router::post('addItem', 'ItemController');
+
 
 Router::run($path);
