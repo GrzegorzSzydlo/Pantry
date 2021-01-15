@@ -18,19 +18,22 @@ class ItemsRepository extends Repository{
 
         return new Items(
             $item['name_product'],
-            $item['amount']
+            $item['image']
         );
     }
 
     public function addItem(Items $item):void
     {
-        $stmt = $this->database->connect()->prepare('INSERT INTO items (name_product, amount) 
-        VALUES(?,?)');
+        $stmt = $this->database->connect()->prepare('INSERT INTO items (name_product,amount, image, id_assigned_by) 
+        VALUES(?,?,?,?)');
 
+        $assignedById = 1;
 
         $stmt->execute([
             $item->getNameProduct(),
-            $item->getAmount()
+            $item->getAmount(),
+            $item->getImage(),
+            $assignedById
         ]);
     }
 
@@ -44,7 +47,9 @@ class ItemsRepository extends Repository{
         foreach ($items as $item){
             $result[] = new Items(
                 $item['name_product'],
-                $item['amount']
+                $item['image'],
+                $item['amount'],
+                $item['id']
             );
         }
         return $result;

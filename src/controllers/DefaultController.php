@@ -29,4 +29,8 @@ class DefaultController extends AppController {
     {
         $this->render('logout');
     }
+    public function recipe()
+    {
+        $this->render('recipe');
+    }
 }

@@ -14,6 +14,10 @@
                 <a href="main" class="button">Home</a>
             </li>
             <li>
+                <i class="fas fa-book-open"></i>
+                <a href="recipe" class="button">Recipe</a>
+            </li>
+            <li>
                 <i class="far fa-address-book"></i>
                 <a href="contact" class="button">Contacts</a>
             </li>
@@ -21,14 +25,17 @@
     </nav>
     <main>
         <header>
-            <div class="profile">
-                <i class="fas fa-user"></i>
-                Profile
+            <div class="name">
+                <? echo $_SESSION['user'];?>
+            </div>
+            <div class="log-out" onclick="location.href='logout'">
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
             </div>
         </header>
         <section class="projects">
             <div class="contact">
-                <input class="name" name="name" type="text" placeholder="Your's name">
+                <input class="name-input" name="name" type="text" placeholder="Your's name">
                 <input class="email" name="email" type="email" placeholder="Your's email@email.com">
                 <input class="subject" name="subject" type="text" placeholder="Subject">
                 <div class="message">

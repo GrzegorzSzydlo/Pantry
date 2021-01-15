@@ -26,7 +26,7 @@ session_start();
                 <a href="add_item" class="button">Add product</a>
             </li>
             <li>
-                <i class="far fa-address-book"></i>
+                <i class="fas fa-book-open"></i>
                 <a href="contact" class="button">Contacts</a>
             </li>
         </ul>
@@ -42,25 +42,6 @@ session_start();
             </div>
         </header>
         <section class="section">
-            <div class="items-area">
-
-                <div class="item">
-                    <?php foreach ($items as $item):?>
-                    <div id="<?=  $item->getId(); ?>">
-                        <img src="public/uploads/<?= $item->getImage(); ?>">
-                        <div>
-                            <div class="name-item">
-                                <?= $item->getNameProduct(); ?>
-                            </div>
-                            <div class="amount-item">
-                                <?= $item->getAmount(); ?>
-                            </div>
-                        </div>
-
-                    </div>
-                    <?php endforeach;?>
-                </div>
-            </div>
 
         </section>
     </main>

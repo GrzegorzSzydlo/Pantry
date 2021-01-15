@@ -43,23 +43,33 @@ session_start();
         </header>
         <section class="section">
             <div class="items-area">
+                <div class="add-item">
+                    <form action="addItem" method="POST" ENCTYPE="multipart/form-data">
+                        <div class="message">
+                            <?php
+                            if(isset($messages)){
+                                foreach($messages as $message) {
+                                    echo $message;
+                                }
+                            }
+                            ?>
 
-                <div class="item">
-                    <?php foreach ($items as $item):?>
-                    <div id="<?=  $item->getId(); ?>">
-                        <img src="public/uploads/<?= $item->getImage(); ?>">
+                        </div>
+                        <div id="destriction">
+                            <p id="p-name">Product name</p>
+                            <p id="p-amount">Amount</p>
+                        </div>
                         <div>
-                            <div class="name-item">
-                                <?= $item->getNameProduct(); ?>
-                            </div>
-                            <div class="amount-item">
-                                <?= $item->getAmount(); ?>
-                            </div>
+                            <input name="nameProduct" type="text" placeholder="product name" required>
+                            <input name="amount" type="number" placeholder="amount" required>
+                            <input name="image" type="file" placeholder="image">
+                            <button type="submit">Add item</button>
                         </div>
 
-                    </div>
-                    <?php endforeach;?>
-                </div>
+
+                    </form>
+
+            </div>
             </div>
 
         </section>

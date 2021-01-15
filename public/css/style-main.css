@@ -153,22 +153,53 @@ li:last-child {
     margin: 0;
     box-sizing: border-box;
 }
+
 .section{
     height: 100%;
     width: 100%;
 
 }
-.add-items{
+.items-area{
     width: 50%;
     height: 100%;
-    /*background-color: red;*/
 
 }
 
-.recipe{
-    width: 50%;
-    height: 100%;
-   /*background-color: blue;*/
+.item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
 }
+
+.item>div>img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.item>div>div{
+    height: 50%;
+    color: #2699FB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#destriction{
+    display: flex;
+    flex-direction: row;
+}
+
+#p-name{
+    padding-inline-start: 2em;
+}
+
+#p-amount{
+    padding-inline-start: 7em;
+}
+
 
 
