@@ -26,7 +26,11 @@ session_start();
                 <a href="add_item" class="button">Add product</a>
             </li>
             <li>
-                <i class="fas fa-book-open"></i>
+                <i class="fas fa-plus"></i>
+                <a href="add_recipe" class="button">Add recipe</a>
+            </li>
+            <li>
+                <i class="far fa-address-book"></i>
                 <a href="contact" class="button">Contacts</a>
             </li>
         </ul>
@@ -34,7 +38,8 @@ session_start();
     <main>
         <header>
             <div class="name">
-                <? echo $_SESSION['user'];?>
+                <? $name =  unserialize($_SESSION['user']);
+                echo $name->getName()?>
             </div>
             <div class="log-out" onclick="location.href='logout'">
                 <i class="fas fa-sign-out-alt"></i>

@@ -39,8 +39,7 @@ class SecurityController extends AppController {
             return $this->render('login', ['messages'=> ['Wrong password!']]);
         }
 
-        $name = $user->getName();
-        $_SESSION['user'] = htmlspecialchars($name);
+        $_SESSION['user'] = serialize($user);
 
         //return $this->render('main');
         $url ="http://$_SERVER[HTTP_HOST]";

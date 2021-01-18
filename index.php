@@ -18,6 +18,10 @@ Router::post('registration', 'SecurityController');
 Router::post('add_item', 'ItemController');
 Router::post('main', 'ItemController');
 Router::post('addItem', 'ItemController');
+Router::get('plus', 'ItemController');
+Router::get('minus', 'ItemController');
+Router::post('addItemWithSelect', 'ItemController');
 
+Router::post('add_recipe','RecipeController');
 
 Router::run($path);

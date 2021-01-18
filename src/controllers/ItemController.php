@@ -24,7 +24,7 @@ class ItemController extends AppController {
 
     public function add_item(){
         $this->render('add_item');
-}
+    }
 
     public function addItem()
     {
@@ -43,6 +43,31 @@ class ItemController extends AppController {
         return $this->render('main',['messages'=> ['Error']]);
 
     }
+    public function addItemWithSelect(){
+        if($this->isPost())
+        {
+            $amount = intval($_POST['amount-select']);
+            $nameItem = $_POST['item'];
+            $this->itemRepository->addItemWithSelect($amount,$nameItem);
+        }
+
+        $items = $this->itemRepository->getItems();
+        return $this->render('main',['items' => $items]);
+
+    }
+
+    public function plus(int $id){
+        $this->itemRepository->plus($id);
+        http_response_code(200);
+    }
+
+    public function minus(int $id){
+        $this->itemRepository->minus($id);
+        http_response_code(200);
+    }
+
+
+
 
     private function validate(array $file): bool
     {

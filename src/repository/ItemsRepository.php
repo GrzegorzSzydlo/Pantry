@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'Repository.php';
 require_once __DIR__.'./../models/Items.php';
 
@@ -27,7 +27,7 @@ class ItemsRepository extends Repository{
         $stmt = $this->database->connect()->prepare('INSERT INTO items (name_product,amount, image, id_assigned_by) 
         VALUES(?,?,?,?)');
 
-        $assignedById = 1;
+        $assignedById = $this->getIdUser();
 
         $stmt->execute([
             $item->getNameProduct(),
@@ -40,7 +40,9 @@ class ItemsRepository extends Repository{
     public function getItems(): array
     {
         $result =[];
-        $stmt = $this->database->connect()->prepare('SELECT * FROM items;');
+        $id = $this->getIdUser();
+        $stmt = $this->database->connect()->prepare('SELECT * FROM items WHERE id_assigned_by = :id');
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
         $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -54,4 +56,46 @@ class ItemsRepository extends Repository{
         }
         return $result;
     }
+
+    public function plus(int $id){
+        $stmt = $this->database->connect()->prepare('
+            UPDATE items SET amount = amount + 1 WHERE id = :id
+         ');
+
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+
+    public function minus(int $id){
+        $stmt = $this->database->connect()->prepare('
+            UPDATE items SET "amount" = "amount" - 1 WHERE id = :id
+         ');
+
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    public function addItemWithSelect(int $amount, string $nameProduct){
+        $stmt = $this->database->connect()->prepare('
+            UPDATE items SET amount = amount + :amount WHERE (id_assigned_by = :id) and (name_product = :nameProduct )
+         ');
+        $id = $this->getIdUser();
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->bindParam(':amount', $amount, PDO::PARAM_INT);
+        $stmt->bindParam(':nameProduct', $nameProduct, PDO::PARAM_STR);
+        $stmt->execute();
+    }
+    public function getIdUser(){
+        $stmt = $this->database->connect()->prepare('
+            SELECT id as id_user FROM users WHERE email=:email
+        ');
+
+        $email=unserialize($_SESSION['user'])->getEmail();
+
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->execute();
+        $id=$stmt->fetch(PDO::FETCH_ASSOC);
+        return $id['id_user'];
+    }
+
+
 }

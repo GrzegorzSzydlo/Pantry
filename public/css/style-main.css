@@ -162,30 +162,55 @@ li:last-child {
 .items-area{
     width: 50%;
     height: 100%;
+    overflow: auto;
 
 }
 
 .item{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2em;
     padding: 2em;
-    overflow: auto;
 }
+
+
 
 .item>div>img{
-    height: 50%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
+    border: 1px solid #707070;
     border-radius: 1em 1em 0 0;
+
+}
+.item-desc{
+    height: 40%;
+    width: 100%;
+    border: 1px solid #707070;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.item>div{
+    display: flex;
+    flex-direction: column;
 }
 
-.item>div>div{
+.name-amount{
     height: 50%;
     color: #2699FB;
+    font-size: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.plus-minus{
+    height: 50%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #destriction{
@@ -199,6 +224,36 @@ li:last-child {
 
 #p-amount{
     padding-inline-start: 7em;
+}
+.section-select{
+    width: 50%;
+    height: 50%;
+}
+#form-select{
+    display: flex;
+    flex-direction: column;
+}
+
+#choose-select{
+    width: 80%;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#choose-select>input{
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+#item-select{
+    font-size: 1.3em;
+}
+
+.addSelect{
+    width: 30%;
+    margin-left: 30%;
 }
 
 
