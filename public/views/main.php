@@ -10,6 +10,7 @@ session_start();
     <script type="text/javascript" src="./public/js/updateAmount.js" defer></script>
     <title>PROJECTS</title>
 </head>
+<body>
 <div class="base-container">
     <nav>
         <img src="public/img/logo_pantry.svg">
@@ -93,4 +94,3 @@ session_start();
     </main>
 </div>
 </body>
-</html>

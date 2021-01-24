@@ -10,6 +10,7 @@ class ItemController extends AppController {
     const UPLOAD_DIRECTORY = '/../public/uploads/';
 
     private $itemRepository;
+    private $message;
 
     public function __construct()
     {

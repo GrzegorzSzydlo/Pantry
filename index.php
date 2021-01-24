@@ -22,6 +22,10 @@ Router::get('plus', 'ItemController');
 Router::get('minus', 'ItemController');
 Router::post('addItemWithSelect', 'ItemController');
 
+Router::post('recipe','RecipeController');
 Router::post('add_recipe','RecipeController');
+Router::post('addRecipe','RecipeController');
+Router::post('search','RecipeController');
+Router::get('chooseRecipe','RecipeController');
 
 Router::run($path);

@@ -4,11 +4,14 @@ session_start();
 
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style-main.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style-recipe.css">
 
     <script src="https://kit.fontawesome.com/f9ac35827f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./public/js/searchRecipe.js" defer></script>
+    <script type="text/javascript" src="./public/js/chooseRecipe.js" defer></script>
     <title>PROJECTS</title>
 </head>
+<body>
 <div class="base-container">
     <nav>
         <img src="public/img/logo_pantry.svg">
@@ -37,6 +40,9 @@ session_start();
     </nav>
     <main>
         <header>
+            <div class="search-bar">
+                <input placeholder="search project">
+            </div>
             <div class="name">
                 <? $name =  unserialize($_SESSION['user']);
                 echo $name->getName()?>
@@ -47,9 +53,48 @@ session_start();
             </div>
         </header>
         <section class="section">
+            <div class="recipe-title">
+                <?php foreach ($recipes as $recipe): ?>
+                <div id="<?= $recipe->getId(); ?>">
+                    <div class="title-show">
+                        <?= $recipe->getTitle(); ?>
+                    </div>
+                </div>
+                <?php endforeach;?>
+            </div>
 
+            <div class="recipe-area">
+                <div id="">
+                    <img src="">
+                    <div class="title">
+
+                    </div>
+                    <div class="description">
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </div>
 </body>
-</html>
+
+<template id="recipe-template">
+    <div id="">
+        <div class="title-show">
+            title
+        </div>
+    </div>
+</template>
+
+<template id="chooseRecipe">
+        <div id="">
+            <img src="">
+            <div class="title">
+
+            </div>
+            <div class="description">
+
+            </div>
+        </div>
+</template>

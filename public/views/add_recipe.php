@@ -47,35 +47,14 @@ session_start();
             </div>
         </header>
         <section class="section">
-            <div class="items-area">
-                <div class="add-item">
-                    <form action="addItem" method="POST" ENCTYPE="multipart/form-data">
-                        <div class="message">
-                            <?php
-                            if(isset($messages)){
-                                foreach($messages as $message) {
-                                    echo $message;
-                                }
-                            }
-                            ?>
+            <form action="addRecipe" method="POST" ENCTYPE="multipart/form-data">
 
-                        </div>
-                        <div id="destriction">
-                            <p id="p-name">Product name</p>
-                            <p id="p-amount">Amount</p>
-                        </div>
-                        <div>
-                            <input name="nameProduct" type="text" placeholder="product name" required>
-                            <input name="amount" type="number" placeholder="amount" required>
-                            <input name="image" type="file" placeholder="image">
-                            <button type="submit">Add item</button>
-                        </div>
+                <input name="title" type="text" placeholder="title" required>
+                <textarea name="description" rows=5 placeholder="description" required></textarea>
 
-
-                    </form>
-
-            </div>
-            </div>
+                <input type="file" name="img-recipe" required /><br/>
+                <button type="submit">send</button>
+            </form>
 
         </section>
     </main>
