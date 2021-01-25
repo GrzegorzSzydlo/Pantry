@@ -55,13 +55,12 @@
 
             </div>
             <div class="address-box">
-                <div class="address">
-
-                </div>
                 <div class="author-box">
                     <div class="author">
-                        <img src="public/img/uploads/moje zdiecie.jpg">
-                        <p>Mam na imię Grzegorz Szydło</p>
+                        <img src="public/uploads/moje_zdiecie.jpg">
+                        <p>Mam na imię Grzegorz Szydło<br>
+                        Masz jakiś problem?<br>
+                        Chętnie pomogę ;)</p>
                     </div>
                 </div>
             </div>

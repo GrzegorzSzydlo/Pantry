@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style-main.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style-add_item.css">
 
     <script src="https://kit.fontawesome.com/f9ac35827f.js" crossorigin="anonymous"></script>
     <title>PROJECTS</title>
@@ -58,23 +58,21 @@ session_start();
                                 }
                             }
                             ?>
-
                         </div>
                         <div id="destriction">
                             <p id="p-name">Product name</p>
                             <p id="p-amount">Amount</p>
                         </div>
-                        <div>
-                            <input name="nameProduct" type="text" placeholder="product name" required>
-                            <input name="amount" type="number" placeholder="amount" required>
+                        <div id="add-input">
+                            <div>
+                                <input name="nameProduct" type="text" placeholder="product name" required>
+                                <input name="amount" type="number" placeholder="amount" required>
+                            </div>
                             <input name="image" type="file" placeholder="image">
                             <button type="submit">Add item</button>
                         </div>
-
-
                     </form>
-
-            </div>
+                </div>
             </div>
 
         </section>

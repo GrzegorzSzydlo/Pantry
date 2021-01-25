@@ -65,12 +65,12 @@ session_start();
 
             <div class="recipe-area">
                 <div id="">
-                    <img src="">
+                    <img src="public/uploads/potrawy.jpg">
                     <div class="title">
-
+                        Wybierz przepis ;)
                     </div>
                     <div class="description">
-
+                        wystarczy nacisnąć
                     </div>
                 </div>
             </div>

@@ -48,7 +48,29 @@ header {
     border-bottom: 1px solid gray;
 }
 
+.search-bar {
+    width: 70%;
+    margin-right: 4em;
+}
+
+.search-bar > input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 23px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 0.72px;
+    color: #A8A8A8;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
 section {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -137,19 +159,20 @@ li:last-child {
     padding: 1em 1em;
 }
 
-.section{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-}
 
 .recipe-title{
     width: 50%;
     height: 100%;
+    padding: 2em;
     overflow: auto;
 }
+
+.recipe-title>div{
+    height: 2em;
+}
+
+
+
 .title-show{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -158,8 +181,10 @@ li:last-child {
     color: #707070;
     letter-spacing: 0.1em;
     text-align: center;
-    width: 10%;
+    width: 70%;
+    height: 80%;
     padding: 0 1em;
+    font-size: 1.3em;
 }
 
 .recipe-area{
@@ -168,3 +193,82 @@ li:last-child {
     overflow: auto;
 }
 
+.recipe-area>div>img{
+    height: 30%;
+    width: 80%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+
+}
+
+.title{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.description{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+@media only screen and (max-device-width: 360px) {
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1.5em;
+    }
+
+    li i {
+        font-size: 1.2em;
+        width: 1.2em;
+    }
+
+    .button {
+        margin-left: 0.5em;
+        width: 50%;
+    }
+    .name {
+        width: 15%;
+    }
+
+    .log-out {
+        width: 20%;
+    }
+
+    .log-out>i {
+        padding: 1em 1em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        align-items: center;
+    }
+    .recipe-title{
+        width: 80%;
+        height: 40%;
+    }
+
+    .recipe-area{
+        width: 80%;
+    }
+
+    .title{
+        margin-top: 1.5em;
+        font-size: 2em;
+    }
+
+    .description{
+        margin-top: 1.2em;
+        font-size: 1.2em;
+    }
+
+}

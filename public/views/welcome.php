@@ -35,8 +35,8 @@
                 <p>które posiadasz w swoim domu.</p>
                 <p id="zapraszam">Zapraszam</p>
             </div>
-            <div>
-                2
+            <div id="image-welcome">
+                <img src="public/uploads/welcome-image.jpg">
             </div>
         </section>
     </main>

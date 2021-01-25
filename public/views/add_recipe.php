@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style-main.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style-add_recipe.css">
 
     <script src="https://kit.fontawesome.com/f9ac35827f.js" crossorigin="anonymous"></script>
     <title>PROJECTS</title>
@@ -50,7 +50,7 @@ session_start();
             <form action="addRecipe" method="POST" ENCTYPE="multipart/form-data">
 
                 <input name="title" type="text" placeholder="title" required>
-                <textarea name="description" rows=5 placeholder="description" required></textarea>
+                <textarea name="description" rows=10 placeholder="description" required></textarea>
 
                 <input type="file" name="img-recipe" required /><br/>
                 <button type="submit">send</button>
